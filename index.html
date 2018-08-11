@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="src/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="src/css/fontawesome_styles.min.css">
+    <title>NovaonX Chatbot</title>
+  </head>
+  <body>
+	<header>
+		<nav style="margin-top: 0.032em;" id="myHeader" class="navbar navbar-expand-lg navbar-light " data-toggle="sticky-onscroll">
+			<div class="container">
+				<div style="margin-right: 12%;" class="navbar-brand logo">
+					<img  src="src/images/logo.png" alt="">
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="nav navbar-nav mx-md-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Tính năng</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Tại sao chọn NovaonX Chatbot</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Bảng giá</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item fb">
+							<a class="nav-link" href="#"><i class="fab fa-facebook-f"></i> Tiep tuc voi facebook</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="text text-center">
+			<h1>Công cụ Chatbot và bán hàng tự động</h1>
+			<p>Gia tăng doanh số, tiết kiệm chi phí quảng cáo, chăm sóc khách hàng<br> tốt hơn ngay từ những tương tác đầu tiên.</p>
+			<div>
+				<button class="btn btn-pink">Dùng thử miễn phí</button>
+			</div>
+		</div>
+	</header>
+	<section class="partner">
+		<div class="container">
+			<p class="text-center">Khách hàng tiêu biểu</p>
+			<div class="row text-center">
+				<div class="col-sm">
+					<img src="src/images/partner1.png" alt="">
+				</div>
+				<div class="col-sm">
+					<img src="src/images/partner2.png" alt="">
+				</div>
+				<div class="col-sm">
+					<img src="src/images/partner3.png" alt="">
+				</div>
+				<div class="col-sm">
+					<img src="src/images/partner4.png" alt="">
+				</div>
+				<div class="col-sm">
+					<img src="src/images/partner5.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container features">
+		<h1 class="text-center">Các tính năng</h1>
+		<div class="feature" id="feature">
+            <nav class="navbar navbar-expand-lg">
+                <ul class="navbar-nav mx-md-auto">
+                    <li onclick="currentSlide(0)" class="dot" ><span>Chatbot</span></li>
+                    <li onclick="currentSlide(1)" class="dot" ><span >Nhắn tin hàng loạt</span></li>
+                    <li onclick="currentSlide(2)" class="dot" ><span >Quản lý tương tác</span></li>
+                </ul>
+            </nav>
+            <div class="row mySlides">
+                <div class="col-sm-5" style="float: left">
+                    <div id="reply1">
+                        <p>Trả lời khách hàng 24/7 với Chatbot thông minh.</p>
+                    </div>
+                    <div id="reply2">
+                        <p>Phản hồi khách hàng ngay khi khách hàng bình luận, nhắn tin với fanpage của bạn. Phân loại, tạo phễu khách hàng tự động.</p>
+                    </div>
+                    <ul>
+                        <li>Tự động inbox ngay khi khách hàng để lại bình luận trên bài viết của trang.</li>
+                        <li>Tự động chăm sóc khách hàng theo kịch bản đã thiết lập.</li>
+                        <li>Lưu thông tin, phân loại, tạo phễu khách hàng thông minh.</li>
+                        <li>Thiết lập dễ dàng nhờ hàng chục chatbot mẫu.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-7" style="float: right">
+                   <img width="100%" src="src/images/feature1.png" alt="">
+                </div>
+            </div>
+            <div class="row mySlides">
+                <div class="col-sm-5" style="float: left">
+                    <div id="reply1">
+                        <p>Gửi thông điệp vào messenger tới hàng trăm ngàn khách hàng.</p> 
+                    </div>
+                    <div id="reply2">
+                    	<p>Gửi tin nhắn messenger tới toàn bộ khách hàng đã từng nhắn tin với trang của bạn hoàn toàn miễn phí chỉ với một click chuột</p>
+                    </div>
+                    <ul>
+                        <li class="dot1">Gửi tin nhắn tới toàn bộ khách hàng hoàn toàn miễn phí</li>
+                        <li class="dot1">Bộ lọc khách hàng thông minh giúp nhắm chọn tệp khách hàng theo từng chiến dịch cụ thể</li>
+                        <li class="dot1">Kiểm soát hiệu quả chiến dịch qua tỷ lệ gửi thành công, tỷ lệ mở tin nhắn, tỷ lệ phản hồi tin nhắn…</li>
+                        <li class="dot1">Cá nhân hóa nội dung theo tên, giới tính khách hàng trong mỗi tin nhắn</li>
+                    </ul>
+                </div>
+                <div class="col-sm-7" style="float: right">
+                   <img width="100%" src="src/images/feature2.png" alt="">
+                </div>
+            </div>
+            <div class="row mySlides">
+                <div class="col-sm-5" style="float: left">
+                    <div id="reply1">
+                        <p>Quản lý toàn bộ tương tác của khách hàng trên trang của bạn</p>
+                    </div>
+                    <div id="reply2">
+                    	<p>Tổng hợp, quản lý và phản hồi mọi tương tác của khách hàng với trang của bạn trong một giao diện duy nhất.</p>
+                    </div>
+                    <ul>
+                        <li class="dot1">Tự động tổng hợp và phân loại bình luận, tin nhắn trên trang của bạn</li>
+                        <li class="dot1">Bộ lọc hội thoại thông minh theo thẻ hội thoại, theo các tiêu chí lọc như tin chưa đọc, tin có số điện thoại, tin chưa trả lời, lọc theo admin gửi tin</li>
+                        <li class="dot1">Hỗ trợ soạn thảo nhanh nhờ bộ câu trả lời soạn sẵn, tự động lưu số điện thoại của khách hàng</li>
+                        <li class="dot1">Chống cướp khách bằng cách ẩn bình luận, ẩn bình luận có số điện thoại</li>
+                    </ul>
+                </div>
+                <div class="col-sm-7" style="float: right">
+                   <img width="100%" src="src/images/feature3.png" alt="">
+                </div>
+            </div>
+        </div>
+	</section>
+	<div style="clear: both"></div>
+	<section class="thiswhy">
+		<div class="container">
+			<h1 class="text-center">Lý do để chọn NOVAONX CHATBOT</h1>
+			<div class="articles row text-center">
+				<div class="col-sm">
+					<img src="src/images/tietkiemchiphi.png" alt="">
+					<h4>Tiết kiệm chi phí quảng cáo</h4>
+					<p>Tiết kiệm hàng chục triệu chi phí quảng cáo mỗi tháng cho Facebook với tính năng nhắn tin hàng loạt</p>
+				</div>
+				<div class="col-sm">
+					<img src="src/images/tangtilechotdon.png" alt="">
+					<h4>Tăng tỷ lệ chốt đơn</h4>
+					<p>Chống sót bình luận, tin nhắn, phản hồi thông minh ngay khi khách hàng tương tác giúp tăng tỷ lệ chốt đơn hàng</p>
+				</div>
+				<div class="col-sm">
+					<img src="src/images/chamsockhtudong.png" alt="">
+					<h4>Chăm sóc tự động</h4>
+					<p>Tự động chăm sóc khách hàng gửi các thông tin hữu ích sau lần tương tác đầu tiên</p>
+				</div>
+				<div class="col-sm">
+					<img src="src/images/phoihoplmvc.png" alt="">
+					<h4>Phối hợp làm việc hiệu quả</h4>
+					<p>Nhóm công cụ hỗ trợ phối hợp, chuyển giao công việc giữa các quản trị viên trên cùng một fanpage</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container price">
+		<h1 class="text-center">Bảng giá</h1>
+		<div class="plan-price-table-container">
+            <table class="plan-price-table w-100 my-5" cellpadding="0">
+                <tr>
+                    <td></td>
+                    <td>
+                        <div class="h4 text-uppercase text-center plan-price-name px-2 py-4 my-0 font-weight-bold font-size-large">
+                            Beginner
+                        </div>
+                    </td>
+                    <td>
+                        <div class="h4 text-uppercase text-center plan-price-name px-2 py-4 my-0 font-weight-bold font-size-large">
+                        Optimize
+                            <div class="badge-star-container">
+                                <div class="badge-star px-2 py-1">
+                                    <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.8174 11.8949C27.3791 11.3517 27.5774 10.5546 27.335 9.8145C27.0926 9.07442 26.4599 8.5452 25.6836 8.43334L18.8962 7.45489C18.763 7.43572 18.6478 7.35271 18.5882 7.23286L15.5528 1.1313C15.2057 0.433478 14.5027 0 13.7183 0C12.9339 0 12.231 0.433478 11.8839 1.1313L8.84849 7.23292C8.78882 7.35271 8.6737 7.43572 8.54041 7.45495L1.75309 8.43334C0.976858 8.5452 0.344159 9.07442 0.101694 9.8145C-0.140771 10.5546 0.0575871 11.3517 0.619341 11.8949L5.53074 16.6444C5.62714 16.7376 5.67118 16.872 5.6484 17.0037L4.48897 23.7099C4.35641 24.4769 4.66818 25.2375 5.30276 25.6949C5.93734 26.1524 6.763 26.2115 7.4572 25.8494L13.528 22.6832C13.6472 22.621 13.7895 22.621 13.9088 22.6832L19.9797 25.8494C20.2816 26.0069 20.6084 26.0848 20.9335 26.0847C21.3558 26.0847 21.7754 25.9534 22.1339 25.6948C22.7685 25.2373 23.0803 24.4768 22.9477 23.7099L21.7883 17.0036C21.7656 16.8719 21.8095 16.7376 21.9059 16.6443L26.8174 11.8949ZM20.1754 17.2782L21.3348 23.9846C21.3736 24.209 21.234 24.337 21.1721 24.3815C21.1102 24.426 20.9443 24.5184 20.7412 24.4123L14.6704 21.2461C14.3724 21.0907 14.0454 21.0129 13.7185 21.0129C13.3915 21.0129 13.0645 21.0907 12.7665 21.246L6.69575 24.4122C6.49255 24.5182 6.32672 24.4259 6.26486 24.3814C6.20301 24.3368 6.06329 24.2089 6.10213 23.9844L7.26156 17.2782C7.37541 16.6197 7.15554 15.9482 6.67321 15.4819L1.76181 10.7324C1.59744 10.5734 1.63464 10.3884 1.65833 10.3163C1.6819 10.2441 1.76145 10.0728 1.98858 10.0401L8.77585 9.06162C9.44224 8.96557 10.0181 8.55061 10.3162 7.95142L13.3516 1.84979C13.4532 1.64562 13.642 1.62356 13.7185 1.62356C13.7949 1.62356 13.9837 1.64556 14.0854 1.84979V1.84985L17.1208 7.95148C17.4188 8.55067 17.9946 8.96563 18.661 9.06168L25.4484 10.0401C25.6755 10.0728 25.755 10.2442 25.7786 10.3164C25.8023 10.3886 25.8395 10.5736 25.6751 10.7325L20.7637 15.4819C20.2814 15.9482 20.0616 16.6197 20.1754 17.2782Z" transform="translate(0.251953 0.473694)" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="h4 text-uppercase text-center plan-price-name px-2 py-4 my-0 font-weight-bold font-size-large">
+                        Enterprise
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><div class="line-height-base pt-3 px-md-2 text-center">Chỉ từ</div></td>
+                    <td><div class="line-height-base pt-3 px-md-2 text-center">Chỉ từ</div></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div class="px-md-2 pb-4 plan-price-description">
+                            <div class="d-flex line-height-base justify-content-center">
+                                <span class="novaon-color price mr-2">99,000</span>
+                                <span class="align-self-start" style="position: relative; top: 7px">vnd</span>
+                                <span class="align-self-center">/</span>
+                                <span class="align-self-end" style="position: relative; bottom: 8px">tháng</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="px-md-2 pb-4 plan-price-description">
+                            <div class="d-flex line-height-base justify-content-center">
+                                <span class="novaon-color price mr-2">199,000</span>
+                                <span class="align-self-start" style="position: relative; top: 7px">vnd</span>
+                                <span class="align-self-center">/</span>
+                                <span class="align-self-end" style="position: relative; bottom: 8px">tháng</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="px-md-2 pb-4 plan-price-description line-height-base">
+                            <p class="novaon-color price mb-0 text-center">Theo yêu cầu</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pl-2">Số khách hàng theo dõi</td>
+                    <td class="text-center py-2">&le; 750</td>
+                    <td class="text-center py-2">1,500 - 40,000</td>
+                    <td class="text-center py-2">Không giới hạn</td>
+                </tr>
+                <tr>
+                    <td class="pl-2">Quản lý tương tác</td>
+                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
+                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
+                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
+                </tr>
+                <tr>
+                    <td class="pl-2">Get phone</td>
+                    <td class="text-center py-2">&le; 300</td>
+                    <td class="text-center py-2">600 - 20,000</td>
+                    <td class="text-center py-2">Không giới hạn</td>
+                </tr>
+                <tr>
+                    <td class="pl-2">Quản lý khách hàng</td>
+                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
+                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
+                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
+                </tr>
+                <tr>
+                    <td class="pl-2">Trả lời tự động</td>
+                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
+                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
+                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
+                </tr>
+                <tr>
+                    <td class="pl-2">Kịch bản chăm sóc</td>
+                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
+                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
+                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
+                </tr>
+                <tr>
+                    <td class="pl-2">Nhắn tin hàng loạt</td>
+                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
+                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
+                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="text-center">
+                        <div class="select-button p-2">
+                            <a type="button" class="el-button w-100" href="{{ url('auth/facebook?redirect=payment/select-plan?plan=beginner') }}"><span>Chọn gói</span></a>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                        <div class="select-button p-2">
+                            <a type="button" class="el-button w-100" href="{{ url('auth/facebook?redirect=payment/select-plan?plan=optimize') }}"><span>Chọn gói</span></a>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                        <div class="select-button p-2">
+                            <a type="button" class="el-button w-100" href="{{ url('auth/facebook?redirect=payment/select-plan?plan=enterprise') }}"><span>Chọn gói</span></a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+	</section>
+	<section class="container questions">
+		<h1 class="text-center">Câu hỏi thường gặp</h1>
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm">
+				<div class="row">
+					<div class="col-sm-6 questionbox">
+						<div class="question">
+							<div class="row">
+								<div class="col-1">
+									<i class="fas fa-angle-down arrow1"></i>
+								</div>
+								<div class="col">
+									<p>
+									  	<a data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+									    	Tôi có nhiều trang cùng bán một mặt hàng, tôi có thể quản lý hội thoại chung cho các trang này được không?
+									  	</a>
+									</p>
+									<div class="collapse ans" id="collapseExample1">
+										<p> Chế độ gộp trang cho phép bạn quản lý tương tác của các trang được gộp tại cùng một màn hình.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 questionbox">
+						<div class="question">
+							<div class="row">
+								<div class="col-1">
+									<i class="fas fa-angle-down arrow1"></i>
+								</div>
+								<div class="col">
+									<p>
+									  	<a data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+									    	Tài khoản của tôi và trang của tôi có bị Facebook hạ đánh giá nếu gửi quá nhiều tin nhắn hàng loạt không?
+									  	</a>
+									</p>
+									<div class="collapse ans" id="collapseExample2">
+										<p>"NOVAONX CHATBOT thực hiện việc gửi tin theo tần suất tối đa 1 tin nhắn/phút. Đội ngũ phát triển khuyến nghị bạn nên cá nhân hóa nội dung theo tên khách hàng, giới tính... để đa dạng nội dung khi gửi tin, tránh bị Facebook đánh dấu là spam"</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+		        </div>
+		        <div class="row">
+					<div class="col-sm-6 questionbox">
+						<div class="question">
+							<div class="row">
+								<div class="col-1">
+									<i class="fas fa-angle-down arrow2"></i>
+								</div>
+								<div class="col">
+									<p>
+									  	<a data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+									    	Tôi có thể nhắm chọn (Lọc) khách hàng để gửi tin nhắn hàng loạt như thế nào?
+									  	</a>
+									</p>
+									<div class="collapse ans" id="collapseExample3">
+										<p>NOVAONX CHATBOT cho phép bạn nhắm chọn khách hàng theo nhiều tiêu chí khác nhau như ngày tương tác cuối, thẻ hội thoại, thẻ khách hàng, theo giới tính, lịch sử mua hàng...</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 questionbox">
+						<div class="question">
+							<div class="row">
+								<div class="col-1">
+									<i class="fas fa-angle-down arrow2"></i>
+								</div>
+								<div class="col">
+									<p>
+									  	<a data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+									    	Làm thế nào để tự động kéo khách hàng vào inbox khi khách hàng bình luận?
+									  	</a>
+									</p>
+									<div class="collapse ans" id="collapseExample4">
+										<p>Bạn có thể thiết lập tính năng này trong menu trả lời tự động -> Thiết lập trả lời tự động bình luận</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+		        </div>
+		        <div class="row">
+					<div class="col-sm-6 questionbox">
+						<div class="question">
+							<div class="row">
+								<div class="col-1">
+									<i class="fas fa-angle-down arrow2"></i>
+								</div>
+								<div class="col">
+									<p>
+									  	<a data-toggle="collapse" href="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+									    	Các bộ lọc bên trái màn hình quản lý tương tác được sử dụng như thế nào?
+									  	</a>
+									</p>
+									<div class="collapse ans" id="collapseExample5">
+										<p>Các bộ lọc này giúp bạn tìm kiếm và hiển thị danh sách các cuộc hội thoại mà bạn đang quan tâm theo các mục tiêu khác nhau như: Lọc thị tin nhắn, Lọc bình luận, Lọc tin chưa đọc, Lọc có/không có số điện thoại, Lọc tin chưa trả lời, Locj theo ngày tương tác gần nhất.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 questionbox">
+						<div class="question">
+							<div class="row">
+								<div class="col-1">
+									<i class="fas fa-angle-down arrow2"></i>
+								</div>
+								<div class="col">
+									<p>
+									  	<a data-toggle="collapse" href="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+									    	Tôi có nhiều hơn 1 nhân viên trực page, làm thế nào để họ phối hợp với nhau hiệu quả hơn?
+									  	</a>
+									</p>
+									<div class="collapse ans" id="collapseExample6">
+										<p>Hãy sử dụng thẻ hội thoại để đánh dấu hội thoại hoặc thêm việc cần làm ngay tại màn hình tương tác với khách hàng để phối hợp với nhau hiệu quả hơn</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+		        </div>
+	        </div>
+	        <div class="col-sm-1"></div>
+        </div>
+	</section>
+	<section class="ideas text-center">
+		<div class="container">
+			<h1>Ý kiến khách hàng</h1>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="idea">
+						<img src="src/images/client1.png" alt="">
+						<h5>Phan Thị Thu Giang</h5>
+						<h6>CEO Bookin.vn</h6>
+						<p>"Từ khi sử dung Novaon AutoCare, hiệu quả quảng cáo và bán hàng trên facebook đã tăng tới 20%"</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="idea">
+						<img src="src/images/client2.png" alt="">
+						<h5>Lưu Quốc Trưởng</h5>
+						<h6>CEO Binhminhaudio.vn</h6>
+						<p>"Tôi chỉ cần sử dung 1 nhân viên cho toàn bộ hoạt động kinh doanh của mình với ChatBot trên Messenger thay vì từ 2-3 nhân viên như trước."</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="idea">
+						<img src="src/images/client3.png" alt="">
+						<h5>Client Three</h5>
+						<h6>CEO Smartbuy.vn</h6>
+						<p>"Chi phí quảng cáo của chúng tôi giảm tới 15% vì có thể gửi tin nhắn lại cho khách hàng đã tương tác. Điều đó thật tuyệt vời."</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="buynow text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm"></div>
+				<div class="col-sm-7">
+					<h1>Tiết kiệm chi phí quảng cáo ngay hôm nay.</h1>
+				</div>
+				<div class="col-sm"></div>
+			</div>
+			<button class="btn btn-pink">Dùng thử miễn phí</button>
+			<div class="row">
+				<div class="col-sm"></div>
+				<div class="col-sm-11 bg">
+					<div class="camera"></div>
+					<img width="100%" src="src/images/backgroundfooter.png" alt="">
+				</div>
+				<div class="col-sm"></div>
+			</div>
+		</div>
+	</section>
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="src/js/index.js"></script>
+    <div class="line"></div>
+	<footer class="container">
+		<div class="row">
+			<div class="col-sm">
+				Copyright &copy; 2018 NovaonX
+			</div>
+			<div class="col-sm text-right">
+				<a href="#">Back to the top ^</a>
+			</div>
+		</div>
+	</footer>
+  </body>
+</html>
