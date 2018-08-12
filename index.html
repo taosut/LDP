@@ -14,29 +14,29 @@
   </head>
   <body>
 	<header>
-		<nav style="margin-top: 0.032em;" id="myHeader" class="navbar navbar-expand-lg navbar-light " data-toggle="sticky-onscroll">
+		<nav style="margin-top: 0.032em;" id="myHeader" class="navbar navbar-expand-lg navbar-light menu" data-toggle="sticky-onscroll">
 			<div class="container">
-				<div style="margin-right: 12%;" class="navbar-brand logo">
+				<div class="navbar-brand logo">
 					<img  src="src/images/logo.png" alt="">
 				</div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<button id="btn" class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
-					<ul class="nav navbar-nav mx-md-auto">
+					<ul class="nav navbar-nav mx-md-auto text-center">
 						<li class="nav-item">
-							<a class="nav-link" href="#">Tính năng</a>
+							<a class="nav-link" href="#features">Tính năng</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Tại sao chọn NovaonX Chatbot</a>
+							<a class="nav-link" href="#thiswhy">Tại sao chọn NovaonX Chatbot</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Bảng giá</a>
+							<a class="nav-link" href="#price">Bảng giá</a>
 						</li>
 					</ul>
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item fb">
-							<a class="nav-link" href="#"><i class="fab fa-facebook-f"></i> Tiep tuc voi facebook</a>
+							<a class="nav-link" href="#"><i class="fab fa-facebook-f"></i> Tiếp tục với facebook</a>
 						</li>
 					</ul>
 				</div>
@@ -72,16 +72,31 @@
 			</div>
 		</div>
 	</section>
-	<section class="container features">
+	<section class="container features" id="features">
 		<h1 class="text-center">Các tính năng</h1>
 		<div class="feature" id="feature">
-            <nav class="navbar navbar-expand-lg">
-                <ul class="navbar-nav mx-md-auto">
-                    <li onclick="currentSlide(0)" class="dot" ><span>Chatbot</span></li>
+            <nav class="navbar navbar-expand-sm">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li onclick="currentSlide(0)" class="dot dot1 active" ><span>Chatbot</span></li>
                     <li onclick="currentSlide(1)" class="dot" ><span >Nhắn tin hàng loạt</span></li>
                     <li onclick="currentSlide(2)" class="dot" ><span >Quản lý tương tác</span></li>
                 </ul>
             </nav>
+            <!-- <div class="mobile text-center">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col">
+                        <a onclick="currentSlide(0)" class="dot active" >Chatbot</a>
+                    </div>
+                    <div class="col">
+                        <a onclick="currentSlide(1)" class="dot" >Nhắn tin hàng loạt</a>
+                    </div>
+                    <div class="col">
+                        <a onclick="currentSlide(2)" class="dot" >Quản lý tương tác</a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div> -->
             <div class="row mySlides">
                 <div class="col-sm-5" style="float: left">
                     <div id="reply1">
@@ -142,7 +157,7 @@
         </div>
 	</section>
 	<div style="clear: both"></div>
-	<section class="thiswhy">
+	<section class="thiswhy" id="thiswhy">
 		<div class="container">
 			<h1 class="text-center">Lý do để chọn NOVAONX CHATBOT</h1>
 			<div class="articles row text-center">
@@ -169,130 +184,212 @@
 			</div>
 		</div>
 	</section>
-	<section class="container price">
+	<section class="price" id="price">
 		<h1 class="text-center">Bảng giá</h1>
-		<div class="plan-price-table-container">
-            <table class="plan-price-table w-100 my-5" cellpadding="0">
-                <tr>
-                    <td></td>
-                    <td>
-                        <div class="h4 text-uppercase text-center plan-price-name px-2 py-4 my-0 font-weight-bold font-size-large">
-                            Beginner
+        <div class="mobile container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2 class="text-center">BEGINER</h2>
+                    <p class="text-center">Chỉ từ <span class="retail">99,000</span> <sup>vnd</sup> / <sub>tháng</sub></p>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-9">
+                            <p>Số khách hàng theo dõi</p>
                         </div>
-                    </td>
-                    <td>
-                        <div class="h4 text-uppercase text-center plan-price-name px-2 py-4 my-0 font-weight-bold font-size-large">
-                        Optimize
-                            <div class="badge-star-container">
-                                <div class="badge-star px-2 py-1">
-                                    <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M26.8174 11.8949C27.3791 11.3517 27.5774 10.5546 27.335 9.8145C27.0926 9.07442 26.4599 8.5452 25.6836 8.43334L18.8962 7.45489C18.763 7.43572 18.6478 7.35271 18.5882 7.23286L15.5528 1.1313C15.2057 0.433478 14.5027 0 13.7183 0C12.9339 0 12.231 0.433478 11.8839 1.1313L8.84849 7.23292C8.78882 7.35271 8.6737 7.43572 8.54041 7.45495L1.75309 8.43334C0.976858 8.5452 0.344159 9.07442 0.101694 9.8145C-0.140771 10.5546 0.0575871 11.3517 0.619341 11.8949L5.53074 16.6444C5.62714 16.7376 5.67118 16.872 5.6484 17.0037L4.48897 23.7099C4.35641 24.4769 4.66818 25.2375 5.30276 25.6949C5.93734 26.1524 6.763 26.2115 7.4572 25.8494L13.528 22.6832C13.6472 22.621 13.7895 22.621 13.9088 22.6832L19.9797 25.8494C20.2816 26.0069 20.6084 26.0848 20.9335 26.0847C21.3558 26.0847 21.7754 25.9534 22.1339 25.6948C22.7685 25.2373 23.0803 24.4768 22.9477 23.7099L21.7883 17.0036C21.7656 16.8719 21.8095 16.7376 21.9059 16.6443L26.8174 11.8949ZM20.1754 17.2782L21.3348 23.9846C21.3736 24.209 21.234 24.337 21.1721 24.3815C21.1102 24.426 20.9443 24.5184 20.7412 24.4123L14.6704 21.2461C14.3724 21.0907 14.0454 21.0129 13.7185 21.0129C13.3915 21.0129 13.0645 21.0907 12.7665 21.246L6.69575 24.4122C6.49255 24.5182 6.32672 24.4259 6.26486 24.3814C6.20301 24.3368 6.06329 24.2089 6.10213 23.9844L7.26156 17.2782C7.37541 16.6197 7.15554 15.9482 6.67321 15.4819L1.76181 10.7324C1.59744 10.5734 1.63464 10.3884 1.65833 10.3163C1.6819 10.2441 1.76145 10.0728 1.98858 10.0401L8.77585 9.06162C9.44224 8.96557 10.0181 8.55061 10.3162 7.95142L13.3516 1.84979C13.4532 1.64562 13.642 1.62356 13.7185 1.62356C13.7949 1.62356 13.9837 1.64556 14.0854 1.84979V1.84985L17.1208 7.95148C17.4188 8.55067 17.9946 8.96563 18.661 9.06168L25.4484 10.0401C25.6755 10.0728 25.755 10.2442 25.7786 10.3164C25.8023 10.3886 25.8395 10.5736 25.6751 10.7325L20.7637 15.4819C20.2814 15.9482 20.0616 16.6197 20.1754 17.2782Z" transform="translate(0.251953 0.473694)" />
-                                    </svg>
-                                </div>
-                            </div>
+                        <div class="col-3 text-center">
+                            <p>&le; 750</p>
                         </div>
-                    </td>
-                    <td>
-                        <div class="h4 text-uppercase text-center plan-price-name px-2 py-4 my-0 font-weight-bold font-size-large">
-                        Enterprise
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-9">
+                            <p>Quản lý tương tác</p>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><div class="line-height-base pt-3 px-md-2 text-center">Chỉ từ</div></td>
-                    <td><div class="line-height-base pt-3 px-md-2 text-center">Chỉ từ</div></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div class="px-md-2 pb-4 plan-price-description">
-                            <div class="d-flex line-height-base justify-content-center">
-                                <span class="novaon-color price mr-2">99,000</span>
-                                <span class="align-self-start" style="position: relative; top: 7px">vnd</span>
-                                <span class="align-self-center">/</span>
-                                <span class="align-self-end" style="position: relative; bottom: 8px">tháng</span>
-                            </div>
+                        <div class="col-3 text-center">
+                            <i class="fas fa-check"></i>
                         </div>
-                    </td>
-                    <td>
-                        <div class="px-md-2 pb-4 plan-price-description">
-                            <div class="d-flex line-height-base justify-content-center">
-                                <span class="novaon-color price mr-2">199,000</span>
-                                <span class="align-self-start" style="position: relative; top: 7px">vnd</span>
-                                <span class="align-self-center">/</span>
-                                <span class="align-self-end" style="position: relative; bottom: 8px">tháng</span>
-                            </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-9">
+                            <p>Get phone</p>
                         </div>
-                    </td>
-                    <td>
-                        <div class="px-md-2 pb-4 plan-price-description line-height-base">
-                            <p class="novaon-color price mb-0 text-center">Theo yêu cầu</p>
+                        <div class="col-3 text-center">
+                            <p>&le; 300</p>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="pl-2">Số khách hàng theo dõi</td>
-                    <td class="text-center py-2">&le; 750</td>
-                    <td class="text-center py-2">1,500 - 40,000</td>
-                    <td class="text-center py-2">Không giới hạn</td>
-                </tr>
-                <tr>
-                    <td class="pl-2">Quản lý tương tác</td>
-                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
-                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
-                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
-                </tr>
-                <tr>
-                    <td class="pl-2">Get phone</td>
-                    <td class="text-center py-2">&le; 300</td>
-                    <td class="text-center py-2">600 - 20,000</td>
-                    <td class="text-center py-2">Không giới hạn</td>
-                </tr>
-                <tr>
-                    <td class="pl-2">Quản lý khách hàng</td>
-                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
-                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
-                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
-                </tr>
-                <tr>
-                    <td class="pl-2">Trả lời tự động</td>
-                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
-                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
-                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
-                </tr>
-                <tr>
-                    <td class="pl-2">Kịch bản chăm sóc</td>
-                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
-                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
-                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
-                </tr>
-                <tr>
-                    <td class="pl-2">Nhắn tin hàng loạt</td>
-                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
-                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
-                    <td class="text-center py-2"><i class="fa fa-check novaon-color font-size-large"></i></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="text-center">
-                        <div class="select-button p-2">
-                            <a type="button" class="el-button w-100" href="{{ url('auth/facebook?redirect=payment/select-plan?plan=beginner') }}"><span>Chọn gói</span></a>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-9">
+                            <p>Quản lý khách hàng</p>
                         </div>
-                    </td>
-                    <td class="text-center">
-                        <div class="select-button p-2">
-                            <a type="button" class="el-button w-100" href="{{ url('auth/facebook?redirect=payment/select-plan?plan=optimize') }}"><span>Chọn gói</span></a>
+                        <div class="col-3 text-center">
+                            <i class="fas fa-check"></i>
                         </div>
-                    </td>
-                    <td class="text-center">
-                        <div class="select-button p-2">
-                            <a type="button" class="el-button w-100" href="{{ url('auth/facebook?redirect=payment/select-plan?plan=enterprise') }}"><span>Chọn gói</span></a>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-9">
+                            <p>Trả lời tự động</p>
                         </div>
-                    </td>
-                </tr>
-            </table>
+                        <div class="col-3 text-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-9">
+                            <p>Kịch bản chăm sóc</p>
+                        </div>
+                        <div class="col-3 text-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-9">
+                            <p>Nhắn tin hàng loạt</p>
+                        </div>
+                        <div class="col-3 text-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-sm-4">
+                    <h2 class="text-center">OPTIMIZE<i class="far fa-star"></i></h2>
+                    <p class="text-center">Chỉ từ <span class="retail">199,000</span> <sup>vnd</sup> / <sub>tháng</sub></p>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-8">
+                            <p>Số khách hàng theo dõi</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <p>1,500-40,000</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-8">
+                            <p>Quản lý tương tác</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-8">
+                            <p>Get phone</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <p>600-20,000</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-8">
+                            <p>Quản lý khách hàng</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-8">
+                            <p>Trả lời tự động</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-8">
+                            <p>Kịch bản chăm sóc</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-8">
+                            <p>Nhắn tin hàng loạt</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-sm-4">
+                    <h2 class="text-center">INTERPRISE</h2>
+                    <p class="text-center"><span class="retail">Theo yêu cầu</span></p>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-7">
+                            <p>Số khách hàng theo dõi</p>
+                        </div>
+                        <div class="col-5 text-center">
+                            <p>Không giới hạn</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-7">
+                            <p>Quản lý tương tác</p>
+                        </div>
+                        <div class="col-5 text-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-7">
+                            <p>Get phone</p>
+                        </div>
+                        <div class="col-5 text-center">
+                            <p>Không giới hạn</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-7">
+                            <p>Quản lý khách hàng</p>
+                        </div>
+                        <div class="col-5 text-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-7">
+                            <p>Trả lời tự động</p>
+                        </div>
+                        <div class="col-5 text-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-7">
+                            <p>Kịch bản chăm sóc</p>
+                        </div>
+                        <div class="col-5 text-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col-7">
+                            <p>Nhắn tin hàng loạt</p>
+                        </div>
+                        <div class="col-5 text-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>  
+                </div>
+            </div>
         </div>
 	</section>
 	<section class="container questions">
@@ -302,14 +399,15 @@
 			<div class="col-sm">
 				<div class="row">
 					<div class="col-sm-6 questionbox">
-						<div class="question">
+						<div class="question pointer" id="reload1"  data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
 							<div class="row">
+
 								<div class="col-1">
 									<i class="fas fa-angle-down arrow1"></i>
 								</div>
 								<div class="col">
 									<p>
-									  	<a data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+									  	<a>
 									    	Tôi có nhiều trang cùng bán một mặt hàng, tôi có thể quản lý hội thoại chung cho các trang này được không?
 									  	</a>
 									</p>
@@ -321,14 +419,14 @@
 						</div>
 					</div>
 					<div class="col-sm-6 questionbox">
-						<div class="question">
+						<div class="question pointer" id="reload2"  data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
 							<div class="row">
 								<div class="col-1">
 									<i class="fas fa-angle-down arrow1"></i>
 								</div>
 								<div class="col">
 									<p>
-									  	<a data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+									  	<a>
 									    	Tài khoản của tôi và trang của tôi có bị Facebook hạ đánh giá nếu gửi quá nhiều tin nhắn hàng loạt không?
 									  	</a>
 									</p>
@@ -342,14 +440,14 @@
 		        </div>
 		        <div class="row">
 					<div class="col-sm-6 questionbox">
-						<div class="question">
+						<div class="question pointer" id="reload3"  data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
 							<div class="row">
 								<div class="col-1">
 									<i class="fas fa-angle-down arrow2"></i>
 								</div>
 								<div class="col">
 									<p>
-									  	<a data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+									  	<a>
 									    	Tôi có thể nhắm chọn (Lọc) khách hàng để gửi tin nhắn hàng loạt như thế nào?
 									  	</a>
 									</p>
@@ -361,14 +459,14 @@
 						</div>
 					</div>
 					<div class="col-sm-6 questionbox">
-						<div class="question">
+						<div class="question pointer" id="reload4"  data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
 							<div class="row">
 								<div class="col-1">
 									<i class="fas fa-angle-down arrow2"></i>
 								</div>
 								<div class="col">
 									<p>
-									  	<a data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+									  	<a>
 									    	Làm thế nào để tự động kéo khách hàng vào inbox khi khách hàng bình luận?
 									  	</a>
 									</p>
@@ -382,14 +480,14 @@
 		        </div>
 		        <div class="row">
 					<div class="col-sm-6 questionbox">
-						<div class="question">
+						<div class="question pointer" id="reload5"  data-toggle="collapse" href="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
 							<div class="row">
 								<div class="col-1">
 									<i class="fas fa-angle-down arrow2"></i>
 								</div>
 								<div class="col">
 									<p>
-									  	<a data-toggle="collapse" href="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+									  	<a>
 									    	Các bộ lọc bên trái màn hình quản lý tương tác được sử dụng như thế nào?
 									  	</a>
 									</p>
@@ -401,14 +499,14 @@
 						</div>
 					</div>
 					<div class="col-sm-6 questionbox">
-						<div class="question">
+						<div class="question pointer" id="reload6"  data-toggle="collapse" href="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
 							<div class="row">
 								<div class="col-1">
 									<i class="fas fa-angle-down arrow2"></i>
 								</div>
 								<div class="col">
 									<p>
-									  	<a data-toggle="collapse" href="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+									  	<a>
 									    	Tôi có nhiều hơn 1 nhân viên trực page, làm thế nào để họ phối hợp với nhau hiệu quả hơn?
 									  	</a>
 									</p>
@@ -488,7 +586,7 @@
 				Copyright &copy; 2018 NovaonX
 			</div>
 			<div class="col-sm text-right">
-				<a href="#">Back to the top ^</a>
+				<a href="#">Back to the top <span><i class="fas fa-caret-up"></i></span></a>
 			</div>
 		</div>
 	</footer>

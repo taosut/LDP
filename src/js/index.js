@@ -27,37 +27,6 @@ function currentSlide(n) {
     slideIndex = n;
     showSlides(true);
 }
- /* Arrow reload */
-$(document).ready(function(){
-    $("#reload1").click(function(){
-        $("#reload1 span").toggleClass("reload1");
-    });
-});
-$(document).ready(function(){
-    $("#reload2").click(function(){
-        $("#reload2 span").toggleClass("reload1");
-    });
-});
-$(document).ready(function(){
-    $("#reload3").click(function(){
-        $("#reload3 span").toggleClass("reload1");
-    });
-});
-$(document).ready(function(){
-    $("#reload4").click(function(){
-        $("#reload4 span").toggleClass("reload1");
-    });
-});
-$(document).ready(function(){
-    $("#reload5").click(function(){
-        $("#reload5 span").toggleClass("reload1");
-    });
-});
-$(document).ready(function(){
-    $("#reload6").click(function(){
-        $("#reload6 span").toggleClass("reload1");
-    });
-});
  /* Sticky menu */
 window.onscroll = function() {myFunction()};
 var header = document.getElementById("myHeader");
@@ -69,3 +38,40 @@ function myFunction() {
         header.classList.remove("sticky");
     }
 }
+/* jquery */
+$(document).ready(function(){
+    /* Arrow reload */
+    $("#reload1").click(function(){
+        $("#reload1 i").toggleClass("reload");
+    });
+    $("#reload2").click(function(){
+        $("#reload2 i").toggleClass("reload");
+    });
+    $("#reload3").click(function(){
+        $("#reload3 i").toggleClass("reload");
+    });
+    $("#reload4").click(function(){
+        $("#reload4 i").toggleClass("reload");
+    });
+    $("#reload5").click(function(){
+        $("#reload5 i").toggleClass("reload");
+    });
+    $("#reload6").click(function(){
+        $("#reload6 i").toggleClass("reload");
+    });
+    /* bg menu */
+    $("#btn").click(function(){
+        $(".menu").toggleClass("sticky1");
+    });
+    /* scrolling menu */
+    $('.nav-link').click(function() {
+        var sectionTo = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(sectionTo).offset().top
+        }, 1500);
+    });
+    /* toggle menu */
+    $(".nav-item").click(function(){
+        $(".collapse").removeClass("show");
+    });
+});
