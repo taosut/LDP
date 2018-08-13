@@ -187,9 +187,11 @@ h1 {
 
 footer {
   line-height: 50px; }
-  footer a {
-    text-decoration: none;
-    color: #1D243E; }
+  footer .back {
+    text-align: right; }
+    footer .back a {
+      text-decoration: none;
+      color: #1D243E; }
 
 .line {
   border-top: 1px solid #DADADA; }
@@ -221,8 +223,17 @@ footer {
     padding-left: 15px; } }
 @media screen and (max-width: 768px) {
   .price .mobile {
-    display: block; } }
+    display: block; }
+
+  .ideas .idea {
+    height: auto;
+    margin-bottom: 15px; } }
 @media screen and (max-width: 575px) {
+  .partner .partner4 {
+    display: none; }
+  .partner .partner5 {
+    display: none; }
+
   .features .feature nav ul {
     width: 100%;
     display: inline; }
@@ -231,7 +242,10 @@ footer {
       padding: 12px 0 12px 0 !important;
       float: left; }
   .features .feature nav .dot {
-    margin: 5px; } }
+    margin: 5px; }
+
+  footer .back {
+    text-align: left; } }
 @media screen and (max-width: 425px) {
   .features .feature nav {
     padding: 0; }
@@ -241,10 +255,15 @@ footer {
       float: left; }
     .features .feature nav .dot {
       margin: 0px;
-      font-size: 13px; } }
-@media screen and (max-width: 425px) {
-  .features .feature nav .dot {
-    font-size: 12px; } }
+      font-size: 12px; } }
+@media screen and (max-width: 413px) {
+  .partner .col img {
+    width: 100px; } }
+@media screen and (max-width: 375px) {
+  .partner .col {
+    padding: 0; }
+    .partner .col img {
+      width: 90px; } }
 @media screen and (max-width: 320px) {
   .features .feature nav ul li {
     padding: 0 !important; }

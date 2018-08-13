@@ -254,10 +254,14 @@ h1 {
 }
 footer {
 	line-height: 50px;
-	a {
-		text-decoration: none;
-		color: #1D243E;
+	.back {
+		text-align: right;
+		a {
+			text-decoration: none;
+			color: #1D243E;
+		}
 	}
+	
 }
 .line {
 	border-top: 1px solid #DADADA;	
@@ -310,8 +314,22 @@ footer {
 		.mobile {
 			display: block;		}
 	}
+	.ideas {
+		.idea {
+			height: auto;
+			margin-bottom: 15px;
+		}
+	}
 } 
 @media screen and (max-width: 575px){
+	.partner {
+		.partner4 {
+			display: none;
+		}
+		.partner5 {
+			display: none;
+		}
+	}
 	.features {
 		.feature {
 			nav {
@@ -330,6 +348,11 @@ footer {
 			}
 		}
 	}
+	footer {
+		.back {
+			text-align: left;
+		}
+	}
 }
 @media screen and (max-width: 425px){
 	.features {
@@ -345,23 +368,27 @@ footer {
 				}
 				.dot {
 					margin: 0px;
-					font-size: 13px;
+					font-size: 12px;
 				}
 			}
 		}
 	}
 }
-@media screen and (max-width: 425px){
-	.features {
-		.feature {
-			nav {
-				ul {
-					li {
-					}
-				}
-				.dot {
-					font-size: 12px;
-				}
+@media screen and (max-width: 413px){
+	.partner {
+		.col {
+			img {
+				width: 100px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 375px){
+	.partner {
+		.col {
+			padding: 0;
+			img {
+				width: 90px;
 			}
 		}
 	}
