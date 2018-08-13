@@ -95,18 +95,19 @@ h1 {
   .price .mobile {
     display: none; }
     .price .mobile .option {
+      position: relative;
       border: 1px solid #D8DDE6;
       margin-bottom: 15px; }
+      .price .mobile .option .fa-star {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        padding: 10px 10px 10px 10px;
+        background: #B9256A;
+        color: #ffffff; }
     .price .mobile h2 {
       font-size: 26px;
       padding-top: 24px; }
-    .price .mobile .fa-star {
-      position: absolute;
-      top: 0;
-      right: 10px;
-      padding: 10px 10px 10px 10px;
-      background: #B9256A;
-      color: #ffffff; }
     .price .mobile .fa-check {
       color: #B9256A; }
     .price .mobile .line {

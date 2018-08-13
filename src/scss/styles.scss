@@ -132,20 +132,21 @@ h1 {
 	.mobile {
 		display: none;
 		.option {
+			position: relative;
 			border: 1px solid #D8DDE6;
 			margin-bottom: 15px;
+			.fa-star {
+				position: absolute;
+				top: 0;
+				right: 10px;
+				padding: 10px 10px 10px 10px;
+				background: #B9256A;
+				color: #ffffff;
+			}
 		}
 		h2 {
 			font-size: 26px;
 			padding-top: 24px;
-		}
-		.fa-star {
-			position: absolute;
-			top: 0;
-			right: 10px;
-			padding: 10px 10px 10px 10px;
-			background: #B9256A;
-			color: #ffffff;
 		}
 		.fa-check {
 			color:  #B9256A;
