@@ -130,7 +130,8 @@ h1 {
 		margin-top: 41px;
 	}
 	.mobile {
-		.col-sm-4 {
+		display: none;
+		.option {
 			border: 1px solid #D8DDE6;
 			margin-bottom: 15px;
 		}
@@ -240,7 +241,7 @@ h1 {
 	border-radius: 5px;
 	background: #929AAE;
 	margin-left: 50%;
-}
+	}
 	h1 {
 		padding-top: 84px;
 		padding-bottom: 32px;
@@ -279,7 +280,7 @@ footer {
 .pointer {
 	cursor: pointer;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px){
 	header {
 		nav {
 			ul {
@@ -303,6 +304,12 @@ footer {
 		}
 	}
 }
+@media screen and (max-width: 768px){
+	.price {
+		.mobile {
+			display: block;		}
+	}
+} 
 @media screen and (max-width: 575px){
 	.features {
 		.feature {

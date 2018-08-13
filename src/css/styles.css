@@ -92,23 +92,25 @@ h1 {
   margin-bottom: 75px; }
   .price h1 {
     margin-top: 41px; }
-  .price .mobile .col-sm-4 {
-    border: 1px solid #D8DDE6;
-    margin-bottom: 15px; }
-  .price .mobile h2 {
-    font-size: 26px;
-    padding-top: 24px; }
-  .price .mobile .fa-star {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    padding: 10px 10px 10px 10px;
-    background: #B9256A;
-    color: #ffffff; }
-  .price .mobile .fa-check {
-    color: #B9256A; }
-  .price .mobile .line {
-    border-top: 1px dotted #e5e5e5; }
+  .price .mobile {
+    display: none; }
+    .price .mobile .option {
+      border: 1px solid #D8DDE6;
+      margin-bottom: 15px; }
+    .price .mobile h2 {
+      font-size: 26px;
+      padding-top: 24px; }
+    .price .mobile .fa-star {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      padding: 10px 10px 10px 10px;
+      background: #B9256A;
+      color: #ffffff; }
+    .price .mobile .fa-check {
+      color: #B9256A; }
+    .price .mobile .line {
+      border-top: 1px dotted #e5e5e5; }
   .price .retail {
     color: #B9256A;
     font-size: 32px; }
@@ -216,6 +218,9 @@ footer {
   .ideas .idea p {
     padding-right: 15px;
     padding-left: 15px; } }
+@media screen and (max-width: 768px) {
+  .price .mobile {
+    display: block; } }
 @media screen and (max-width: 575px) {
   .features .feature nav ul {
     width: 100%;
