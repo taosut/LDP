@@ -208,6 +208,20 @@ footer {
   width: 100%;
   background: #1D243E; }
 
+.stickybutton {
+  display: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #B9256A;
+  text-align: center;
+  z-index: 999; }
+  .stickybutton a {
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 38px; }
+
 .reload {
   transform: rotate(-180deg); }
 
@@ -220,7 +234,10 @@ footer {
 
   .ideas .idea p {
     padding-right: 15px;
-    padding-left: 15px; } }
+    padding-left: 15px; }
+
+  .stickybutton {
+    display: block; } }
 @media screen and (max-width: 768px) {
   .price .mobile {
     display: block; }
